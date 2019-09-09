@@ -22,4 +22,8 @@ javascript + canvas éventuellement (à voir si possible de faire sans canvas)
 #SI BESOIN D'EXEMPLES DE CODE
  -> codepen
  
+#raccourcis
+ctrl + maj + / => commenter un block
+ctrl + / => commenter une ligne
+ 
  
