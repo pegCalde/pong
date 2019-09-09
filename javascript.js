@@ -1,6 +1,6 @@
 <html>
     <head>
-        <script type="application/x-javascript" >
+        <script type="application/x-javascript">
             function draw() 
             {
                 var canvas = document.getElementById("canvas");
