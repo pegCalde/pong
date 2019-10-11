@@ -20,7 +20,7 @@ trello -> pong
 javascript + canvas éventuellement (à voir si possible de faire sans canvas)
 
 #SI BESOIN D'EXEMPLES DE CODE
- -> codepen
+ -> codepen et liste aide/inspi sur Trello
  
 #raccourcis
 ctrl + maj + / => commenter un block
