@@ -16,10 +16,39 @@ function draw()
 
 function play()
 {
-    game.ball.x += game.ball.speed.x;
-    game.ball.y += game.ball.speed.y;
     draw();
+    move();
+
     requestAnimationFrame(play);
+}
+
+function move()
+{
+    if (game.ball.x < canvas.width && game.ball.x > 0 && game.ball.y < canvas.height && game.ball.y > 0)
+    {
+        game.ball.x += game.ball.speed.x;
+        game.ball.y += game.ball.speed.y;
+    }
+    else if(game.ball.x >= canvas.width)
+    {
+        //game.ball.x -= game.ball.speed.x * 100;
+        game.ball.speed.x *= -1;
+        game.ball.x -= 4;
+    }
+
+    else if(game.ball.x <= 0)
+    {
+        game.ball.speed.x *= -1;
+        game.ball.x += 4;
+    }
+
+
+    else if(game.ball.y >= canvas.height || game.ball.y <= 0)
+    {
+        game.ball.y -= game.ball.speed.y;
+    }
+
+
 }
 
 document.addEventListener('DOMContentLoaded', function ()
@@ -35,13 +64,12 @@ document.addEventListener('DOMContentLoaded', function ()
                     r: 5,
                     speed:
                         {
-                            x: 2,
-                            y: 2
+                            x: 1,
+                            y: 0
                         }
                 }
         }
-    game.ball.x += 2;
-    game.ball.y += 2;
+
     draw();
     play();
 });
