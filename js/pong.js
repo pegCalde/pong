@@ -32,6 +32,7 @@ function move()
     else if(game.ball.x >= canvas.width)
     {
         //game.ball.x -= game.ball.speed.x * 100;
+        //game.ball.speed.x *= -1;
         game.ball.speed.x *= -1;
         game.ball.x -= 4;
     }
@@ -40,6 +41,20 @@ function move()
     {
         game.ball.speed.x *= -1;
         game.ball.x += 4;
+    }
+
+    else if(game.ball.y >= canvas.height)
+    {
+        //game.ball.y -= game.ball.speed.y * 100;
+        //game.ball.speed.y *= -1;
+        game.ball.speed.y *= -1;
+        game.ball.y -= 4;
+    }
+
+    else if(game.ball.y <= 0)
+    {
+        game.ball.speed.y *= -1;
+        game.ball.y += 4;
     }
 
 
@@ -65,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function ()
                     speed:
                         {
                             x: 1,
-                            y: 0
+                            y: 1
                         }
                 }
         }
