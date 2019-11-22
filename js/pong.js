@@ -119,13 +119,79 @@ function move()
     }
     else
     {
+
+        //Premiere gestion direction rebond
+
         game.ball.speed.x = (game.ball.speed.x * -1);
         game.ball.speed.y = (game.ball.speed.y * -1);
         game.ball2.speed.x = (game.ball2.speed.x * -1);
         game.ball2.speed.y = (game.ball2.speed.y * -1);
+
+        /*
+        //Deuxieme gestion direction rebond
+
+        posX = game.ball.x - game.ball2.x;
+
+        posY = game.ball.y - game.ball2.y;
+
+
+        DistanceEntreBalls = Math.sqrt((posX * posX) + (posY * posY));
+
+
+        NormXBalls = posX / DistanceEntreBalls;
+
+        NormYBalls = posY / DistanceEntreBalls;
+
+
+        NormScaBall = (NormXBalls * game.ball.speed.x) + (NormYBalls * game.ball.speed.y);
+
+        NormScaBall2 = (NormXBalls * game.ball2.speed.x) + (NormYBalls * game.ball2.speed.y);
+
+
+        ScaXBall = NormXBalls * NormScaBall;
+
+        ScaYBall = NormYBalls * NormScaBall;
+
+        ScaXBall2 = NormXBalls * NormScaBall2;
+
+        ScaYBall2 = NormYBalls * NormScaBall2;
+
+
+        DirRebX = ScaXBall2 - ScaXBall;
+
+        DirRebY = ScaYBall2 - ScaYBall;
+
+
+
+        //rebond billard rapide
+        game.ball.speed.x = game.ball.speed.x + DirRebX;
+        game.ball.speed.y = game.ball.speed.y + DirRebY;
+        game.ball2.speed.x = game.ball2.speed.x + DirRebX;
+        game.ball2.speed.y = game.ball2.speed.y + DirRebY;
+        */
     }
 
+    //rebond balle sur balle
+    /*
+    var positionsX = a.x - b.x;
+    var positionsY = a.y - b.y;
+    var vabLength = Math.sqrt( (positionsX * positionsX) + (positionsY * positionsY) );
 
+    var VabNormalizedX = (positionsX / vabLength);
+    var VabNormalizedY = (positionsY / vabLength);
+
+    var VabNormalizedScalaireA = ( (VabNormalizedX * a.vx) + (VabNormalizedY * a.vy));
+    var VabNormalizedScalaireB = ( (VabNormalizedX * b.vx) + (VabNormalizedY * b.vy));
+
+    var VaScalairizedX = (VabNormalizedX * VabNormalizedScalaireA);
+    var VaScalairizedY = (VabNormalizedY * VabNormalizedScalaireA);
+    var VbScalairizedX = (VabNormalizedX * VabNormalizedScalaireB);
+    var VbScalairizedY = (VabNormalizedY * VabNormalizedScalaireB);
+
+    var resX = VbScalairizedX - VaScalairizedX;
+    var resY = VbScalairizedY - VaScalairizedY;
+
+     */
     /* code fonctionnel
     if (game.ball.x < canvas.width && game.ball.x > 0 && game.ball.y < canvas.height && game.ball.y > 0)
     {
