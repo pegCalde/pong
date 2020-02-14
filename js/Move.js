@@ -1,5 +1,14 @@
-function move(balles)
+function move(balle)
 {
+    for (i = 1; i <= numberMAX_ball; i ++)
+    {
+        balle.x = (balle.x + balle.speed_x);
+        balle.y = (balle.y + balle.speed_y);
+        // game.ball.x = (game.ball.x + game.ball.speed.x);
+        // game.ball.y = (game.ball.y + game.ball.speed.y);
+
+    }
+    /*
     //Tester collisions mur ball made in Pantz
     if((balles[0].x < 0) && (balles[0].speed.x < 0))
     {
@@ -63,9 +72,11 @@ function move(balles)
         game.ball2.speed.y = (game.ball2.speed.y * -1);
 
         //Deuxieme gestion direction rebond
-        game.
+        //game.
 
 
     }
+
+     */
 
 }

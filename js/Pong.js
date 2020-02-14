@@ -88,7 +88,7 @@ function move()
         game.ball2.speed.y = (game.ball2.speed.y * -1);
 
         //Deuxieme gestion direction rebond
-        game.
+        //game.
 
 
     }
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function ()
                         {
                             x: 10,
                             y: 10
-                        }
+                        },
                     velocity: game.ball.x * game.ball.y + game.ball.x * game.ball.y
                 },
             ball2:
