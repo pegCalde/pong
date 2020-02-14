@@ -94,7 +94,7 @@ function move()
     }
 
 }
-
+//aaaaa
 document.addEventListener('DOMContentLoaded', function ()
 {
     canvas = document.getElementById("canvas");

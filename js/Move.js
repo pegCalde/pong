@@ -1,5 +1,6 @@
 function move(balle)
 {
+    //TODO résoudre bug déplacement
     for (i = 1; i <= numberMAX_ball; i ++)
     {
         balle.x = (balle.x + balle.speed_x);
