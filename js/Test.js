@@ -16,25 +16,27 @@ function play()
     requestAnimationFrame(play);
 }
 
-document.addEventListener('DOMContentLoaded', function ()
+
+document.addEventListener('DOMContentLoaded', function (){
+
+let numberMAX_ball = 10;
+
+
+drawBackground(ctx, canvas, 0, 0);
+
+for (i = 1; i <= numberMAX_ball; i ++)
 {
-    let numberMAX_ball = 10;
+    tabBall[i] = new Ball(10 * i, 10 * i, 5, 5, 5);
+    drawBalle(ctx, tabBall[i]);
+}
 
-
-    drawBackground(ctx, canvas, 0, 0);
-
-    for (i = 1; i <= numberMAX_ball; i ++)
-    {
-        tabBall[i] = new Ball(10 * i, 10 * i, 5, 5, 5);
-        drawBalle(ctx, tabBall[i]);
-    }
-
-    play();
+play();
 
 
 
 
 });
+
 
 // balle = new Ball(50, 30, 10, 4, 5);
 // console.log(number_ball);

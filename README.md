@@ -23,8 +23,8 @@ javascript + canvas éventuellement (à voir si possible de faire sans canvas)
  -> codepen et liste aide/inspi sur Trello
  
 #raccourcis
-ctrl + maj + / => commenter un block
-ctrl + / => commenter une ligne
+ctrl + maj + / => commenter un block  
+ctrl + / => commenter une ligne  
 ctrl + d => dupliquer une ligne sous la ligne sur laqelle on est
  
  

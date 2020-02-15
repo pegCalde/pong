@@ -1,5 +1,6 @@
 function move(balle)
 {
+
     //TODO résoudre bug déplacement
     balle.x = (balle.x + balle.speed_x);
     balle.y = (balle.y + balle.speed_y);
@@ -11,8 +12,18 @@ function move(balle)
 
 
     /*
+    //todo résoudre le move
+    for (let i = 1; i <= numberMAX_ball; i ++)
+    {
+        balle.x = (balle.x + balle.speed_x);
+        balle.y = (balle.y + balle.speed_y);
+        // game.ball.x = (game.ball.x + game.ball.speed.x);
+        // game.ball.y = (game.ball.y + game.ball.speed.y);
+
+    }
+
     //Tester collisions mur ball made in Pantz
-    if((balles[0].x < 0) && (balles[0].speed.x < 0))
+    if((balle[0].x < 0) && (balle[0].speed.x < 0))
     {
         game.ball.speed.x = (game.ball.speed.x * -1);
     }
@@ -34,6 +45,7 @@ function move(balle)
     game.ball.x = (game.ball.x + game.ball.speed.x);
     game.ball.y = (game.ball.y + game.ball.speed.y);
 
+    /*
     //Tester collisions mur ball2 made in Pantz
     if((game.ball2.x < 0) && (game.ball2.speed.x < 0))
     {
@@ -78,7 +90,6 @@ function move(balle)
 
 
     }
-
      */
 
 }
