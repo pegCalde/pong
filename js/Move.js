@@ -2,8 +2,29 @@ function move(balle)
 {
 
     //TODO résoudre bug déplacement
-    balle.x = (balle.x + balle.speed_x);
-    balle.y = (balle.y + balle.speed_y);
+    if((balle.x < 0) && (balle.speed_x < 0))
+    {
+        balle.speed_x = (balle.speed_x * -1);
+    }
+    else if((balle.x > canvas.width) && (balle.speed_x > 0))
+    {
+        balle.speed_x = (balle.speed_x * -1);
+    }
+    else if((balle.y < 0) && (balle.speed_y < 0))
+    {
+        balle.speed_y = (balle.speed_y * -1);
+    }
+    else if((balle.y > canvas.height) && (balle.speed_y > 0))
+    {
+        balle.speed_y = (balle.speed_y * -1);
+    }
+    else
+    {
+        balle.x = (balle.x + balle.speed_x);
+        balle.y = (balle.y + balle.speed_y);
+    }
+
+}
     // a tester balle.x = (balle.x + balle.speed_x);
     // a tester balle.y = (balle.y + balle.speed_y);
 
@@ -92,4 +113,3 @@ function move(balle)
     }
      */
 
-}

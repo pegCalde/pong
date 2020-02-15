@@ -2,7 +2,7 @@
 //var ctx = canvas.getContext("2d");
 function drawBalle(contexte, ball)
 {
-    contexte.fillStyle = 'white';
+    contexte.fillStyle = "white";
     contexte.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2, false);
     contexte.fill();
 }
