@@ -1,21 +1,40 @@
-let speed;
-let canvas;
-let game;
-let ctx;
+let tabBall = new Array();
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
 
-
-canvas = document.getElementById("canvas");
-ctx = canvas.getContext("2d");
-
-
-drawBackground(ctx, canvas, 0, 0);
-
-for (i = 1; i <= numberMAX_ball; i ++)
+function play()
 {
-    tabBall[i] = new Ball(10 * i, 10 * i, 5, 5, 5);
-    drawBalle(ctx, tabBall[i]);
-    //move(tabBall[i]);
+    drawBackground(ctx, canvas, 0, 0);
+    for (i = 1; i <= numberMAX_ball; i ++)
+    {
+        move(tabBall[i]);
+
+        drawBalle(ctx, tabBall[i]);
+
+    }
+
+    requestAnimationFrame(play);
 }
+
+document.addEventListener('DOMContentLoaded', function ()
+{
+    let numberMAX_ball = 10;
+
+
+    drawBackground(ctx, canvas, 0, 0);
+
+    for (i = 1; i <= numberMAX_ball; i ++)
+    {
+        tabBall[i] = new Ball(10 * i, 10 * i, 5, 5, 5);
+        drawBalle(ctx, tabBall[i]);
+    }
+
+    play();
+
+
+
+
+});
 
 // balle = new Ball(50, 30, 10, 4, 5);
 // console.log(number_ball);
@@ -34,6 +53,3 @@ for (i = 1; i <= numberMAX_ball; i ++)
 
 //requestAnimationFrame(play);
 
-console.log(tabBall[0]);
-console.log(tabBall[1]);
-console.log(tabBall[2]);

@@ -11,6 +11,7 @@ function drawBackground(contexte, canvas, x, y)
 
     contexte.fillStyle = "black";
     contexte.fillRect(x,y, canvas.width, canvas.height);
+    contexte.beginPath();
     contexte.fill();
 }
 

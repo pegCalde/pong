@@ -1,5 +1,4 @@
 let numberMAX_ball = 10;
-let tabBall = new Array();
 let number_ball = 0;
 
 class Ball
@@ -20,17 +19,8 @@ class Ball
                         this.r = rayon;
                         this.speed_x = speedX;
                         this.speed_y = speedY;
-                        tabBall[number_ball] = this;
                         number_ball ++;
                 }
-        }
-        get number_ball()
-        {
-                return number_ball;
-        }
-        get tabBall()
-        {
-                return tabBall;
         }
 
         get x()

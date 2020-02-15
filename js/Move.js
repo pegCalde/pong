@@ -1,14 +1,15 @@
 function move(balle)
 {
     //TODO résoudre bug déplacement
-    for (i = 1; i <= numberMAX_ball; i ++)
-    {
-        balle.x = (balle.x + balle.speed_x);
-        balle.y = (balle.y + balle.speed_y);
+    balle.x = (balle.x + balle.speed_x);
+    balle.y = (balle.y + balle.speed_y);
+    // a tester balle.x = (balle.x + balle.speed_x);
+    // a tester balle.y = (balle.y + balle.speed_y);
+
         // game.ball.x = (game.ball.x + game.ball.speed.x);
         // game.ball.y = (game.ball.y + game.ball.speed.y);
 
-    }
+
     /*
     //Tester collisions mur ball made in Pantz
     if((balles[0].x < 0) && (balles[0].speed.x < 0))
