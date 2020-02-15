@@ -1,5 +1,5 @@
 let numberMAX_ball = 10;
-let tabBall = new Array();
+let tabBall = [];
 let number_ball = 0;
 
 class Ball

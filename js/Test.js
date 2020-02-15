@@ -10,7 +10,7 @@ ctx = canvas.getContext("2d");
 
 drawBackground(ctx, canvas, 0, 0);
 
-for (i = 1; i <= numberMAX_ball; i ++)
+for (let i = 1; i <= numberMAX_ball; i ++)
 {
     tabBall[i] = new Ball(10 * i, 10 * i, 5, 5, 5);
     drawBalle(ctx, tabBall[i]);
