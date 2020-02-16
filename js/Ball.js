@@ -1,5 +1,5 @@
 let number_ball = 0;
-let numberMAX_ball = 10;
+let numberMAX_ball = 200;
 
 class Ball
 {
