@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function ()
 
     for (i = 1; i <= numberMAX_ball; i ++)
     {
-        //x = Math.floor((Math.random() * 635) + 5);
-        //y = Math.floor((Math.random() * 475) + 5);
+        x = Math.floor((Math.random() * 635) + 5);
+        y = Math.floor((Math.random() * 475) + 5);
         speedx = Math.floor((Math.random() * 5) - 5);
         speedy = Math.floor((Math.random() * 5) - 5);
-        tabBall[i] = new Ball(10 * i, 10 * i, 5, speedx, speedy);
+        tabBall[i] = new Ball(x, y, 5, speedx, speedy);
         drawBalle(ctx, tabBall[i]);
     }
 
