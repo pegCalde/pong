@@ -1,7 +1,5 @@
 function move(balle)
 {
-
-    //TODO résoudre bug déplacement
     if((balle.x < 0) && (balle.speed_x < 0))
     {
         balle.speed_x = (balle.speed_x * -1);

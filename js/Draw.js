@@ -1,5 +1,3 @@
-//var canvas = document.getElementById("canvas");
-//var ctx = canvas.getContext("2d");
 function drawBalle(contexte, ball)
 {
     contexte.beginPath();
@@ -14,9 +12,3 @@ function drawBackground(contexte, canvas, x, y)
     contexte.fillRect(x,y, canvas.width, canvas.height);
     contexte.fill();
 }
-
-/*
-ctx.fillStyle = "black";
-ctx.fillRect(0,0, canvas.width, canvas.height);
-ctx.beginPath();
-*/
